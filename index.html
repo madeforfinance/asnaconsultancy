@@ -315,6 +315,29 @@ section{scroll-margin-top:130px}
   .dash{max-width:580px}
 }
 @media(max-width:600px){
+  /* richer, more saturated clay palette for small screens */
+  :root{
+    --bg:#CFB984;
+    --clay:#FDF8EA;
+    --clay-deep:#EDDFC0;
+    --sh-dark:rgba(108,86,48,.68);
+    --gold:#7E5C26;
+    --gold-2:#D69E3F;
+    --gold-soft:#F6E8C8;
+    --clay-out:18px 18px 40px var(--sh-dark),-18px -18px 40px var(--sh-light),inset 5px 5px 12px rgba(255,255,255,.9);
+    --clay-out-sm:10px 10px 24px var(--sh-dark),-10px -10px 24px var(--sh-light),inset 3px 3px 8px rgba(255,255,255,.9);
+    --clay-in:inset 8px 8px 18px rgba(108,86,48,.5),inset -8px -8px 18px rgba(255,255,255,.95);
+    --clay-in-sm:inset 6px 6px 14px rgba(108,86,48,.5),inset -6px -6px 14px rgba(255,255,255,.95);
+  }
+  body{background:
+    radial-gradient(700px 380px at 88% -4%,rgba(222,164,60,.4),transparent 62%),
+    radial-gradient(600px 380px at 4% 26%,rgba(255,255,255,.65),transparent 60%),
+    radial-gradient(700px 500px at 50% 112%,rgba(222,164,60,.24),transparent 60%),
+    var(--bg)}
+  .nav{background:rgba(207,185,132,.92)}
+  .stat,.pill,.eyebrow{background:linear-gradient(145deg,#FDF8EA,#F8EBCB)}
+  .svc-icon{background:linear-gradient(145deg,#F5DC95,#D69E3F);color:#5E451A}
+  .dash-badge{background:linear-gradient(145deg,#F5DC95,#EAC86E);color:#5E451A}
   .wrap{padding:0 20px}
   .nav .wrap{min-height:88px}
   .brand-logo{height:56px}
